@@ -1,9 +1,215 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ko">
 <head>
-    <title>EAT'ZIP Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EAT'ZIP. — 오늘 먹은 한 끼를, 폴더 속 추억으로</title>
+  <meta name="description" content="EAT'ZIP.은 먹은 음식을 찍고, 어디서 누구와 먹었는지 함께 남기는 음식 기록 iOS 앱입니다. 로그인 없이, 모든 기록은 내 기기에만 저장됩니다.">
+  <meta property="og:title" content="EAT'ZIP.">
+  <meta property="og:description" content="오늘 먹은 한 끼를, 폴더 속 추억으로. 로그인 없이 기기에만 저장되는 음식 기록 앱.">
+  <meta property="og:image" content="assets/app-icon.png">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400..800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <h1>안녕하세요! 잇집 페이지입니다.</h1>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">EAT'ZIP.</a>
+      <nav class="pill-nav" aria-label="주요 메뉴">
+        <a href="index.html" aria-current="page">소개</a>
+        <a href="support.html">고객지원</a>
+        <a href="privacy.html">개인정보</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <h1>EAT'ZIP.</h1>
+          <p class="subtitle">What food brought you joy?</p>
+          <p class="lead">먹은 음식을 찍고, 어디서 누구와 먹었는지 함께 남겨 두세요. 기록은 달마다 폴더에, 날짜별로 달력에, 지역별로 지도에 쌓입니다. 로그인 없이 바로 시작할 수 있고, 모든 기록은 내 기기에만 저장됩니다.</p>
+          <div class="hero-actions">
+            <!-- TODO: 출시 후 App Store 링크로 바꾸고 aria-disabled를 지운다 -->
+            <a class="btn btn-primary" href="#" aria-disabled="true">App Store 출시 예정</a>
+            <a class="btn" href="support.html">사용 방법 보기</a>
+          </div>
+          <p class="hero-note">iPhone · iPad · iOS 17 이상 · 한국어 / English</p>
+        </div>
+
+        <div class="hero-art">
+          <div class="folder hero-folder">
+            <span class="folder-label">Today</span>
+            <div class="folder-body">
+              <img class="app-icon" src="assets/app-icon.png" alt="EAT'ZIP. 앱 아이콘" width="128" height="128">
+              <div class="chips">
+                <span class="chip on">로그인 없음</span>
+                <span class="chip">기기에만 저장</span>
+                <span class="chip">광고 없음</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="features" aria-labelledby="features-title">
+        <p class="eyebrow">Features</p>
+        <h2 id="features-title">한 끼를 남기는 가장 즐거운 방법</h2>
+        <div class="feature-grid">
+          <article class="folder t-orange">
+            <span class="folder-label">Camera</span>
+            <div class="folder-body">
+              <h3>밀어서 바로 촬영</h3>
+              <p>화면 가장자리의 카메라 버튼을 밀면 바로 촬영 화면이 열립니다. 0.5×·1×·망원 배율, 플래시, 3분할 격자, 위에서 찍을 때 쓰는 수평계를 지원합니다.</p>
+            </div>
+          </article>
+          <article class="folder t-coral">
+            <span class="folder-label">Video</span>
+            <div class="folder-body">
+              <h3>3초 동영상</h3>
+              <p>김이 오르는 찌개, 치즈가 늘어나는 피자처럼 사진으로 부족한 순간은 소리 없는 3초 클립으로 남기세요. 기록 화면에서 반복 재생됩니다.</p>
+            </div>
+          </article>
+          <article class="folder t-green">
+            <span class="folder-label">Filter</span>
+            <div class="folder-body">
+              <h3>필터 · 자르기 · 배경 제거</h3>
+              <p>비비드, 드라마틱, 모노, 누아르 등 10가지 필터와 비율 자르기를 지원합니다. 지원하는 기기에서는 음식만 남기고 배경을 지울 수 있습니다.</p>
+            </div>
+          </article>
+          <article class="folder t-blue">
+            <span class="folder-label">Record</span>
+            <div class="folder-body">
+              <h3>나에게 맞는 기록 항목</h3>
+              <p>식당 이름, 함께한 사람, 별점, 한줄평, 메뉴, 가격, 식사 시간대, 재방문 의사, 태그 중 원하는 항목만 켜세요. 항목을 직접 만들 수도 있습니다.</p>
+            </div>
+          </article>
+          <article class="folder t-butter">
+            <span class="folder-label">Folder</span>
+            <div class="folder-body">
+              <h3>월별 폴더와 내 폴더</h3>
+              <p>기록은 달마다 폴더에 자동으로 정리됩니다. "맛집 투어"처럼 원하는 이름과 색으로 폴더를 만들고, 사진 비율 그대로 모자이크로 볼 수 있습니다.</p>
+            </div>
+          </article>
+          <article class="folder t-lavender">
+            <span class="folder-label">Calendar</span>
+            <div class="folder-body">
+              <h3>먹은 날이 보이는 달력</h3>
+              <p>날짜 칸마다 그날 먹은 음식 사진이 채워집니다. 한 달 동안 무엇을 먹었는지 한눈에 볼 수 있습니다.</p>
+            </div>
+          </article>
+          <article class="folder t-mint">
+            <span class="folder-label">Map</span>
+            <div class="folder-body">
+              <h3>지역별 기록 지도</h3>
+              <p>전국 17개 시·도 일러스트 지도에 지역별 기록 수가 표시됩니다. 위치는 사진의 촬영 위치로 자동 기록되고, 장소 검색으로 직접 고칠 수도 있습니다.</p>
+            </div>
+          </article>
+          <article class="folder t-rose">
+            <span class="folder-label">Retro</span>
+            <div class="folder-body">
+              <h3>한 달 · 한 해 회고</h3>
+              <p>가장 많이 간 식당, 가장 많이 함께한 사람, 별점 5점 모음까지. 카드를 넘기며 한 달과 한 해의 식사를 돌아볼 수 있습니다.</p>
+            </div>
+          </article>
+          <article class="folder t-latte">
+            <span class="folder-label">Widget</span>
+            <div class="folder-body">
+              <h3>그때 먹은 음식 위젯</h3>
+              <p>1년 전 오늘 먹은 음식을 홈 화면에서 다시 만나 보세요. "바로 촬영" 위젯은 잠금 화면에도 둘 수 있습니다.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" aria-labelledby="how-title">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">찍고, 남기고, 다시 꺼내 보기</h2>
+        <ol class="steps">
+          <li class="box">
+            <h3>찍거나 불러오기</h3>
+            <p>카메라로 찍거나 사진 앱에서 최대 10장을 골라 불러옵니다.</p>
+          </li>
+          <li class="box">
+            <h3>꾸미기</h3>
+            <p>필터와 자르기로 사진을 다듬습니다. 대표 사진도 고를 수 있습니다.</p>
+          </li>
+          <li class="box">
+            <h3>기록하기</h3>
+            <p>원하는 내용을 적고 "아카이빙하기"를 누릅니다. 사진만 바로 저장해도 됩니다.</p>
+          </li>
+          <li class="box">
+            <h3>다시 보기</h3>
+            <p>폴더, 달력, 지도, 검색, 회고로 다시 꺼내 보고 친구에게 공유합니다.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="promise" aria-labelledby="promise-title">
+        <p class="eyebrow">Privacy first</p>
+        <h2 id="promise-title">내 기록은 내 기기에만</h2>
+        <div class="promise-grid">
+          <div class="box promise">
+            <span class="mark" aria-hidden="true">01</span>
+            <div>
+              <h3>로그인이 없습니다</h3>
+              <p>회원가입이나 계정 없이 설치하면 바로 사용할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="box promise">
+            <span class="mark" aria-hidden="true">02</span>
+            <div>
+              <h3>서버로 올라가지 않습니다</h3>
+              <p>사진, 동영상, 기록 내용은 모두 기기 안에만 저장됩니다.</p>
+            </div>
+          </div>
+          <div class="box promise">
+            <span class="mark" aria-hidden="true">03</span>
+            <div>
+              <h3>광고 · 추적이 없습니다</h3>
+              <p>광고, 분석 도구, 추적 기능을 넣지 않았습니다.</p>
+            </div>
+          </div>
+          <div class="box promise">
+            <span class="mark" aria-hidden="true">04</span>
+            <div>
+              <h3>인터넷 없이도 됩니다</h3>
+              <p>촬영, 기록, 보기, 검색, 회고는 오프라인에서도 사용할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="box promise">
+            <span class="mark" aria-hidden="true">05</span>
+            <div>
+              <h3>고른 사진만 가져옵니다</h3>
+              <p>사진 앱 전체를 보지 않고, 직접 고른 사진만 앱으로 전달됩니다.</p>
+            </div>
+          </div>
+          <div class="box promise">
+            <span class="mark" aria-hidden="true">06</span>
+            <div>
+              <h3>공유할 때 위치는 빠집니다</h3>
+              <p>공유 이미지에는 위치와 가격이 들어가지 않습니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="logo" href="index.html">EAT'ZIP.</a>
+      <nav aria-label="하단 메뉴">
+        <a href="support.html">고객지원</a>
+        <a href="privacy.html">개인정보 처리방침</a>
+      </nav>
+      <span>© 2026 <span class="todo">개발자명</span></span>
+    </div>
+  </footer>
 </body>
 </html>
