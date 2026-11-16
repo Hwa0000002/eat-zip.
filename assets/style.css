@@ -5,6 +5,7 @@
   --bg: #FFF6EF;          /* EatZipTheme.background */
   --card: #FFFBF4;        /* EatZipTheme.cardFill */
   --active: #FFDFA8;      /* EatZipTheme.activeFill */
+  --lang-active: #FF9F45; /* 한영 전환에서 선택된 언어 */
   --ink: #000;
   --muted: #5b5550;
   --line: 3px;
@@ -99,6 +100,23 @@ img { max-width: 100%; display: block; }
 .pill-nav a:hover { background: rgba(255, 223, 168, 0.5); }
 
 .pill-nav a[aria-current="page"] { background: var(--active); }
+
+/* 주요 메뉴 + 한영 전환을 한 줄로 묶는다. 한영 전환은 메뉴 왼쪽, 내용 크기만큼만 차지 */
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.header-nav .pill-nav { flex: none; }
+
+.header-nav .lang-nav { order: -1; }
+
+.lang-nav a:hover { background: rgba(255, 159, 69, 0.35); }
+
+.lang-nav a[aria-current="page"] { background: var(--lang-active); }
 
 /* ---------- 공용 박스 ---------- */
 
@@ -542,6 +560,8 @@ details[open] summary { border-bottom: 2px solid var(--ink); }
   .site-header .wrap { justify-content: center; }
   .feature-grid, .promise-grid, .steps { grid-template-columns: 1fr; }
   .pill-nav a { padding: 6px 12px; font-size: 14px; }
+  .header-nav { justify-content: center; }
+  .lang-nav a { padding: 6px 10px; font-size: 13px; }
   section { margin-top: 48px; }
   h2 { font-size: 24px; }
   th { white-space: normal; }
